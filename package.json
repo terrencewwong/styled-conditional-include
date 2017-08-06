@@ -1,5 +1,7 @@
 {
   "name": "styled-conditional-include",
+  "description": "A small utility function for including a CSS attribute only when a given prop exists",
+  "repository": "https://github.com/wongterrencew/styled-conditional-include.git",
   "main": "lib/index.js",
   "author": "Terrence Wong <wongterrencew@gmail.com>",
   "license": "MIT",
