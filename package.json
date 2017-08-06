@@ -42,6 +42,7 @@
     "prepublish": "in-publish && yarn build || not-in-publish",
     "lint:js": "prettier-standard",
     "precommit": "lint-staged",
-    "commitmsg": "validate-commit-msg"
+    "commitmsg": "validate-commit-msg",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   }
 }
