@@ -37,7 +37,7 @@
     "test:watch": "jest --watch",
     "flow:watch": "flow-watch",
     "build": "babel -d lib src",
-    "prepublish": "in-publish && yarn build",
+    "prepublish": "in-publish && yarn build || not-in-publish",
     "lint:js": "prettier-standard",
     "precommit": "lint-staged",
     "commitmsg": "validate-commit-msg"
