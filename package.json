@@ -11,6 +11,7 @@
     "flow-bin": "^0.52.0",
     "flow-watch": "^1.1.1",
     "husky": "^0.14.3",
+    "in-publish": "^2.0.0",
     "jest": "^20.0.4",
     "lint-staged": "^4.0.2",
     "prettier-standard": "^6.0.0",
@@ -36,7 +37,7 @@
     "test:watch": "jest --watch",
     "flow:watch": "flow-watch",
     "build": "babel -d lib src",
-    "prepublish": "build",
+    "prepublish": "in-publish && yarn build",
     "lint:js": "prettier-standard",
     "precommit": "lint-staged",
     "commitmsg": "validate-commit-msg"
